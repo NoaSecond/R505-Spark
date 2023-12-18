@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Foustip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*-----SCROLLBAR-----*/
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px transparent;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #696969;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #696969d4;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            overflow: hidden;
+        }
+
+        #chartsWrap {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 40vw;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        #chartsWrap > img {
+            width: 37vw;
+            height: auto;
+        }
+
+        iframe#foliumMap {
+            width: 60vw;
+        }
+    </style>
+</head>
+<body>
+<div id="chartsWrap">
+    <img src="./charts/predictionVentesParGenresParRegions.png" alt="predictionVentesParGenresParRegions">
+    <img src="./charts/top10TitresPlateformes.png" alt="top10TitresPlateformes">
+    <img src="./charts/jeuxLesPlusVendusParGenre.png" alt="jeuxLesPlusVendusParGenre">
+    <img src="./charts/nbTitresDateDeSortie.png" alt="nbTitresDateDeSortie">
+    <img src="./charts/nbTitresParRegion.png" alt="nbTitresParRegion">
+    <img src="./charts/nbTitresPlateformes.png" alt="nbTitresPlateformes">
+</div>
+<iframe id="foliumMap" title="FoliumMap" src="./folium_map.html"></iframe>
+</body>
+</html>

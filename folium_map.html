@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f94e98539cb5eb0ba01a77db734da5d5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f94e98539cb5eb0ba01a77db734da5d5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f94e98539cb5eb0ba01a77db734da5d5 = L.map(
+                "map_f94e98539cb5eb0ba01a77db734da5d5",
+                {
+                    center: [43.68731135256114, 7.227802126432193],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    titles: "Nombre de titres par r\u00e9gions",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e931118f6e08f3381aafe16ba7b5187 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3e931118f6e08f3381aafe16ba7b5187.addTo(map_f94e98539cb5eb0ba01a77db734da5d5);
+    
+            var marker_80c70b5dd46f9e69a9d562de10e5fb25 = L.marker(
+                [40.716578240386546, -78.03702818075023],
+                {}
+            ).addTo(map_f94e98539cb5eb0ba01a77db734da5d5);
+        
+    
+            var icon_8275801fda455cbadc06e4459c0c1985 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "dollar-sign", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_80c70b5dd46f9e69a9d562de10e5fb25.setIcon(icon_8275801fda455cbadc06e4459c0c1985);
+        
+    
+        var popup_5587e245cad634d826a02c382d99125f = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_f6011b96b16e74e649db3d014e76152c = $(`<div id="html_f6011b96b16e74e649db3d014e76152c" style="width: 100.0%; height: 100.0%;"><h3>Amérique du nord</h3><br><h5>Millions d'unités vendues</h5>4402.62</div>`)[0];
+                popup_5587e245cad634d826a02c382d99125f.setContent(html_f6011b96b16e74e649db3d014e76152c);
+            
+        
+
+        marker_80c70b5dd46f9e69a9d562de10e5fb25.bindPopup(popup_5587e245cad634d826a02c382d99125f)
+        ;
+
+        
+    
+    
+            var marker_ed309bdfa2850f1de024c32c5825ab74 = L.marker(
+                [48.857921976690065, 2.3446292198635126],
+                {}
+            ).addTo(map_f94e98539cb5eb0ba01a77db734da5d5);
+        
+    
+            var icon_1f5bd1cf3dac696cc0660fd78de7a5e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "dollar-sign", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_ed309bdfa2850f1de024c32c5825ab74.setIcon(icon_1f5bd1cf3dac696cc0660fd78de7a5e5);
+        
+    
+        var popup_004882d2e0a1d35807af1c7c641ae219 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_ed410ba7a7837262a5ed60d79970427d = $(`<div id="html_ed410ba7a7837262a5ed60d79970427d" style="width: 100.0%; height: 100.0%;"><h3>Europe</h3><br><h5>Millions d'unités vendues</h5>2424.67</div>`)[0];
+                popup_004882d2e0a1d35807af1c7c641ae219.setContent(html_ed410ba7a7837262a5ed60d79970427d);
+            
+        
+
+        marker_ed309bdfa2850f1de024c32c5825ab74.bindPopup(popup_004882d2e0a1d35807af1c7c641ae219)
+        ;
+
+        
+    
+    
+            var marker_ffc5f2680d3e519b3dbe0628c2d1012f = L.marker(
+                [35.71956933370287, 139.72567169859576],
+                {}
+            ).addTo(map_f94e98539cb5eb0ba01a77db734da5d5);
+        
+    
+            var icon_e61a63c1e6540511851695a99dce3f81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "dollar-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ffc5f2680d3e519b3dbe0628c2d1012f.setIcon(icon_e61a63c1e6540511851695a99dce3f81);
+        
+    
+        var popup_e867f92df1be25901bed9e81b6e3415c = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_b1b3d02e538276c238c574ce39dc1015 = $(`<div id="html_b1b3d02e538276c238c574ce39dc1015" style="width: 100.0%; height: 100.0%;"><h3>Japon</h3><br><h5>Millions d'unités vendues</h5>1297.43</div>`)[0];
+                popup_e867f92df1be25901bed9e81b6e3415c.setContent(html_b1b3d02e538276c238c574ce39dc1015);
+            
+        
+
+        marker_ffc5f2680d3e519b3dbe0628c2d1012f.bindPopup(popup_e867f92df1be25901bed9e81b6e3415c)
+        ;
+
+        
+    
+    
+            var marker_e22790416dbc97b7e027a181e17b8a89 = L.marker(
+                [4.050286379462756, 9.761888143062599],
+                {}
+            ).addTo(map_f94e98539cb5eb0ba01a77db734da5d5);
+        
+    
+            var icon_d4eabd5849ced33ae92f32d13fa33b29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "dollar-sign", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e22790416dbc97b7e027a181e17b8a89.setIcon(icon_d4eabd5849ced33ae92f32d13fa33b29);
+        
+    
+        var popup_fa25a96bbc1d32f62bc3b538ec1d7179 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_6d4e8eab2224f8e1da7393d26f03648d = $(`<div id="html_6d4e8eab2224f8e1da7393d26f03648d" style="width: 100.0%; height: 100.0%;"><h3>Afrique</h3><br><h5>Millions d'unités vendues</h5>791.34</div>`)[0];
+                popup_fa25a96bbc1d32f62bc3b538ec1d7179.setContent(html_6d4e8eab2224f8e1da7393d26f03648d);
+            
+        
+
+        marker_e22790416dbc97b7e027a181e17b8a89.bindPopup(popup_fa25a96bbc1d32f62bc3b538ec1d7179)
+        ;
+
+        
+    
+    
+            var marker_d2abf0baecfb251273e2e49e89f64eee = L.marker(
+                [64.17482132102505, -51.74217411075999],
+                {}
+            ).addTo(map_f94e98539cb5eb0ba01a77db734da5d5);
+        
+    
+            var icon_0a56e3a9786bb611a68a0b5c9cbe3498 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "otter", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_d2abf0baecfb251273e2e49e89f64eee.setIcon(icon_0a56e3a9786bb611a68a0b5c9cbe3498);
+        
+    
+        var popup_1ab947c1e4708189dd29c2758f52d173 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_a4ee54bfe1dddd65e56611dd6be68531 = $(`<div id="html_a4ee54bfe1dddd65e56611dd6be68531" style="width: 100.0%; height: 100.0%;"><h3>Loutre</h3><br><h5>Millions d'unités vendues</h5>8920.3</div>`)[0];
+                popup_1ab947c1e4708189dd29c2758f52d173.setContent(html_a4ee54bfe1dddd65e56611dd6be68531);
+            
+        
+
+        marker_d2abf0baecfb251273e2e49e89f64eee.bindPopup(popup_1ab947c1e4708189dd29c2758f52d173)
+        ;
+
+        
+    
+</script>
+</html>

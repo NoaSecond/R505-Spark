@@ -26,12 +26,23 @@ def top10TitresPlateformes(spark):
         "SELECT Platform, COUNT(Name) AS Name_Count FROM TheBigTable GROUP BY Platform ORDER BY Name_Count DESC LIMIT 10").collect()
     platforms2 = [row.Platform for row in platform_counts2]
     titles = [row.Name_Count for row in platform_counts2]
-    colors = ['#FFFF52', '#5286FF', '#FF5252', '#78A0FF', '#FF7878', '#8EFF52', '#94B4FF', '#B3C9FF', '#BDFF99', '#FF9494']
-    plt.pie(titles, labels=platforms2, colors=colors, autopct='%1.1f%%', startangle=90)
+    colors = ['#FFFF52', '#5286FF', '#FF5252', '#78A0FF', '#FF7878', '#8EFF52', '#94B4FF', '#B3C9FF', '#BDFF99',
+              '#FF9494']
+
+    # Graphique
+    plt.figure(figsize=(8, 6))
+    pie = plt.pie(titles, labels=platforms2, colors=colors, autopct='%1.1f%%', startangle=90)
     plt.axis('equal')
     plt.title('Nombre de titres par plateformes\n')
-    plt.savefig('charts/top10TitresPlateformes.png')
 
+    # Légende
+    legend_labels = ['Nintendo', 'Sony', 'Microsoft']
+    legend_colors = ['red', 'blue', 'green']
+    legend_handles = [plt.Rectangle((0, 0), 1, 1, color=color) for color in legend_colors]
+    plt.legend(legend_handles, legend_labels, loc='best')
+
+    plt.savefig('charts/top10TitresPlateformes.png')
+    
 
 def nbTitresDateDeSortie(spark):
     # Visualiser le nombre de titres par date de sortie des 20 dernières années
@@ -92,7 +103,7 @@ def addMarkers(map, sales):
     NewYork_Sales_Description = ("<h3>Amérique du nord</h3>"
                                  "<br><h5>Millions d'unités vendues</h5>"
                                  f"{sales[2]}")
-    folium.Marker(NewYork_Sales, icon=folium.Icon(icon="dollar-sign", color="red", prefix="fa"),
+    folium.Marker(NewYork_Sales, icon=folium.Icon(icon="dollar-sign", color="orange", prefix="fa"),
                   popup=folium.Popup(NewYork_Sales_Description, max_width=200)).add_to(map)
 
     # EU(France) -> Paris
